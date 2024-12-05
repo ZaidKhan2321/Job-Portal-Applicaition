@@ -12,4 +12,7 @@ const corsOptions = {
 const server = express() ;
 server.use(cors(corsOptions)) ;
 
+server.use(express.json()) ;
+server.use(express.urlencoded({extended : true})) ;
+
 export default server ;
