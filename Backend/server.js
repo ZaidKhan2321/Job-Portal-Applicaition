@@ -1,5 +1,5 @@
 import server from "./index.js";
 
-server.listen(3000, ()=>{
-    console.log("Server is listening at port 3000");
+server.listen(process.env.PORT, ()=>{
+    console.log(`Server is listening at port ${process.env.PORT}`);
 }) ;
